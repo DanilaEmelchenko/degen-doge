@@ -1,22 +1,26 @@
 {
-  "name": "vite-project",
+  "name": "degen-doge",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://DanilaEmelchenko.github.io/degen-doge",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.8",
     "@reduxjs/toolkit": "^2.6.1",
+    "@telegram-apps/bridge": "^2.4.0",
     "@telegram-apps/sdk": "^3.5.1",
     "@telegram-apps/sdk-react": "^3.1.2",
     "axios": "^1.8.3",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
